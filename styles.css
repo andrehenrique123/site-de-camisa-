@@ -1,0 +1,37 @@
+@import url("header.css");
+@import url("banner.css");
+:root {
+    background-color:beige;
+
+
+}
+
+.swiper {
+    width: 100%;
+    height: auto; /* Ajuste conforme necessário */
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.preco {
+    font-weight: bold;
+    margin-top: 5px;
+} 
+.carrossel {
+    margin-top: 100px;
+}
+

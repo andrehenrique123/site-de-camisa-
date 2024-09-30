@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Clube</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+  <header class="cabeçalho">
+    <div class=caixa>
+        <input type="checkbox" id="menu" class="caixa-botao">
+        <label for="menu">
+    <span class="cabeçalho-menu-amburguer caixa-imagem"></span></label>
+    <ul class="lista-menu">
+        <li class="lista-menu-titulo">Categoria</li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Dry fit</a></li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Oversized</a></li>
+    </ul>
+    <a href="#"><img class=caixa-imagem src="carrinho.svg" alt="carrinho de compras"></a></div>
+   
+    <div class=caixa>
+      <a href="#"><img class=caixa-imagem src="avatar.png" alt="avatar"></a>
+      <a href="#"><img class=caixa-imagem src="casinha.png" alt="home"></a>
+      <a href="#"><img class=caixa-imagem src="coraçao.png" alt="meus favoritos"></a>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <h2 class="banner-titulo">Você Já sabe por onde começar?</h2>
+    <p class="banner-texto">Saiba mais sobre o seu jogo favorito</p>
+    <input type="search" class="banner-pesquisa" placeholder="Qual será seu jogo escolhido?">
+    <section class="carrossel">
+      <h2 class="carrossel-titulo">CONHEÇA NOSSOS JOGOS</h2>
+      <div class="swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="oversized.svg" alt="Oversized">
+                      <h3>Oversized</h3>
+                      <div class="preco">R$ 99,90</div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="dryfit.svg" alt="Dryfit">
+                      <h3>Dryfit</h3>
+                      <div class="preco">R$ 89,90</div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="oversized2.svg" alt="Oversized">
+                      <h3>Esportes Gerais</h3>
+                      <div class="preco">R$ 79,90</div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="oversized3.svg" alt="Oversized">
+                      <h3>Voleibol</h3>
+                      <div class="preco">R$ 99,90</div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="dryfit2.svg" alt="Dryfit">
+                      <h3>Basquetebol</h3>
+                      <div class="preco">R$ 109,90</div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="produto">
+                      <img src="dryfit3.svg" alt="Dryfit">
+                      <h3>Futebol</h3>
+                      <div class="preco">R$ 89,90</div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+  </section>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: { el: '.swiper-pagination', type: 'bullets' },
+    });
+  </script>
+</body>
+</html>
+
